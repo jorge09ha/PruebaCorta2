@@ -8,10 +8,17 @@ public class Maleta {
 
     private int peso;
     private String tamanio;
+    private String cliCedula;
 
     public Maleta(int peso, String tamanio) {
         this.peso = peso;
         this.tamanio = tamanio;
+    }
+
+    public Maleta(int peso, String tamanio, String cliCedula) {
+        this.peso = peso;
+        this.tamanio = tamanio;
+        this.cliCedula = cliCedula;
     }
 
     @Override
@@ -33,6 +40,14 @@ public class Maleta {
 
     public void setTamanio(String tamanio) {
         this.tamanio = tamanio;
+    }
+
+    public String getCliCedula() {
+        return cliCedula;
+    }
+
+    public void setCliCedula(String cliCedula) {
+        this.cliCedula = cliCedula;
     }
 
 }
