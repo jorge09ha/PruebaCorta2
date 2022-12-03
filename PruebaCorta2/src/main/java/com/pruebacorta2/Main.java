@@ -11,17 +11,16 @@ public class Main {
      */
     public static void main(String[] args) {
         //-------------------------------------------------------------------------Estos son los datos iniciales.
-        ListaClientesMaletas data = new ListaClientesMaletas();
+        ListaDetallada data = new ListaDetallada();
         data.initClientes();
-        System.out.println("### Esta es la lista original ###\n");
+        System.out.println("### Esta es la lista Detallada ordenada por edad ###\n");
         data.verClientesMaletas();
-        System.out.println("\n### Fin de la lista original ###\n");
+        System.out.println("\n### Fin de la lista Detallada ###\n");
         data.initListaMaletas();
         System.out.println("\n### Esta es la lista de Maletas ###\n");
         data.listMaletas.verMaletas();
         System.out.println("\n### Fin de la lista Maletas ###\n");
-        ////-------------------------------------------------------------------------Fin son los datos iniciales.
-        //Nuevos clientes
+        ////-------------------------------------------------------------------------Fin son los datos .
 
     }
 

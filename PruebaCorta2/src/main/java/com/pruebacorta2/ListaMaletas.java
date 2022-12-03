@@ -32,7 +32,15 @@ public class ListaMaletas {
                     aux = aux.getNext();
                 }
                 if (maleta.getPeso() % 2 == 0) {
-                    System.out.println("El peso de la maleta par inserta " + maleta.toString() + " en la tercera posición");
+                    System.out.println("El peso de la maleta es par inserta " + maleta.toString() + " en la última posición");
+                    nuevoNodo.setBack(tail);//
+                    tail.setNext(nuevoNodo);
+                    tail = nuevoNodo;
+                    tail.setNext(head);
+                    head.setBack(tail);//
+
+                } else {
+                    System.out.println("El peso de la maleta impar inserta " + maleta.toString() + " en la tercera posición");
                     i = 1;
                     aux = head;
                     while (i != 3) {
@@ -44,14 +52,6 @@ public class ListaMaletas {
                     aux.setBack(nuevoNodo);
                     aux = aux.getBack().getBack();
                     aux.setNext(nuevoNodo);
-
-                } else {
-                    System.out.println("El peso de la maleta es impar inserta " + maleta.toString() + " en la última posición");
-                    nuevoNodo.setBack(tail);//
-                    tail.setNext(nuevoNodo);
-                    tail = nuevoNodo;
-                    tail.setNext(head);
-                    head.setBack(tail);//
                 }
 
             } else {

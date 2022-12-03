@@ -4,7 +4,7 @@ package com.pruebacorta2;
  *
  * @author Jorge Hernandez Araya | jorge09ha
  */
-public class ListaClientesMaletas {
+public class ListaDetallada {
 
     private Node<Cliente> head;
     private Node<Cliente> tail;
